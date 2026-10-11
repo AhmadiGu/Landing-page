@@ -1,108 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/header.css">
-    <link rel="stylesheet" href="style/general.css">
-    <link rel="stylesheet" href="style/normalize-fwd.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link rel="stylesheet" href="style/about.css" />
+    <link rel="stylesheet" href="style/projects.css" />
+    <link rel="stylesheet" href="style/contact.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/normalize-fwd.css" />
     <title>Gulalai Ahmadi</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-		<nav>
-			<ul class="nav-links">
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Hello! I'm Gulalai Ahmadi, a web developer passionate about creating beautiful and functional websites.</p>
+      <section id="home" class="home">
+        <article>
+          <h1>
+            Creative and passionate web developer dedicated to creating
+            beautiful and functional websites.
+          </h1>
+          <a href="#projects" class="btn">View My Resume</a>
+        </article>
+
+        <img src="images/moon-image.png" alt="Moon Image" />
+      </section>
+
+      <section id="about" class="about">
+        <section class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I have experience in HTML, CSS, JavaScript, and various web
+            development frameworks. I enjoy learning new technologies and
+            improving my skills.
+          </p>
+        </section>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <ul class="nav-links">
+          <li><a href="#html-css-projects">HTML / CSS Projects</a></li>
+          <li><a href="#javascript-projects">JavaScript Projects</a></li>
+          <li><a href="#wordpress-sites">WordPress Sites</a></li>
+          <li><a href="#online-stores">Online Stores</a></li>
+        </ul>
+
+        <section id="html-css-projects" class="project-details">
+          <ul class="project-card">
+            <li>
+              <a href="#">Country Website</a>
+              <p>Coming soon ..</p>
+            </li>
+            <li>
+              <a href="#">Business Website</a>
+              <p>Coming soon ..</p>
+            </li>
+          </ul>
+          <h3 class="project-type">HTML / CSS Projects</h3>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I have experience in HTML, CSS, JavaScript, and various web development frameworks. I enjoy learning new technologies and improving my skills.</p>
+        <section id="javascript-projects" class="project-details">
+          <ul class="project-card">
+            <li>
+              <a href="#">JavaScript Game</a>
+              <p>Coming soon ..</p>
+            </li>
+            <li>
+              <a href="#">Movie Database</a>
+              <p>Coming soon ..</p>
+            </li>
+          </ul>
+          <h3 class="project-type">JavaScript Projects</h3>
         </section>
 
-        <section id="projects">
-            <h2>My Projects</h2>
-            <ul>
-                <li><a href="#html-css-projects">HTML / CSS Projects</a></li>
-                <li><a href="#javascript-projects">JavaScript Projects</a></li>
-                <li><a href="#wordpress-sites">WordPress Sites</a></li>
-                <li><a href="#online-stores">Online Stores</a></li>
-            </ul>
-
-            <section id="html-css-projects">
-                <h3>HTML / CSS Projects</h3>
-                <p>Here are some of my HTML and CSS projects:</p>
-                <ul>
-                    <li><a href="#">Country Website</a></li>
-                    <li><a href="#">Business Website</a></li>
-                </ul>
-            </section>
-
-            <section id="javascript-projects">
-                <h3>JavaScript Projects</h3>
-                <p>Here are some of my JavaScript projects:</p>
-                <ul>
-                    <li><a href="#">JavaScript Game</a></li>
-                    <li><a href="#">Movie Database</a></li>
-                </ul>
-            </section>
-
-            <section id="wordpress-sites">
-                <h3>WordPress Sites</h3>
-                <p>Here are some of the WordPress sites I have developed:</p>
-                <ul>
-                    <li><a href="#">Vancouver</a></li>
-                    <li><a href="#">Mindset</a></li>
-                </ul>
-            </section>
-
-            <section id="online-stores">
-                <h3>Online Stores</h3>
-                <p>Here are some of the online stores I have developed:</p>
-                <ul>
-                    <li><a href="#">Shopify Store</a></li>
-                    <li><a href="#">WooCommerce Store </a></li>
-                </ul>
-            </section>
+        <section id="wordpress-sites" class="project-details">
+          <ul class="project-card">
+            <li>
+              <a href="#">Vancouver site</a>
+              <p>Coming soon ..</p>
+            </li>
+            <li>
+              <a href="#">Mindset site </a>
+              <p>Coming soon ..</p>
+            </li>
+          </ul>
+          <h3 class="project-type">WordPress Sites</h3>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>If you have any questions or would like to get in touch, feel free to reach out to me at gulalai@example.com.</p>
-            <a href="mailto:ahmadigulalai76@gmail.com">Email Me</a>
-
-            <section id="contact-form">
-                <h3>Contact Form</h3>
-                <form action="#" method="post">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
+        <section id="online-stores" class="project-details">
+          <ul class="project-card">
+            <li>
+              <a href="#">Shopify Store</a>
+              <p>Coming soon ..</p>
+            </li>
+            <li>
+              <a href="#">WooCommerce Store </a>
+              <p>Coming soon ..</p>
+            </li>
+          </ul>
+          <h3 class="project-type">Online Stores</h3>
         </section>
+      </section>
+
+      <section id="contact" class="contact">
+        <section class="contact-content">
+          <h2>Get in touch</h2>
+          <p>
+            If you have any questions or would like to get in touch, feel free
+            to reach out to me at gulalai@example.com.
+          </p>
+          <a href="mailto:ahmadigulalai76@gmail.com">Email Me</a>
+        </section>
+        <section id="contact-form" class="contact-form">
+          <h3>Send me a message</h3>
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"  placeholder="Name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required rows="5"></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </section>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Gulalai Ahmadi. All rights reserved.</p>  
-
+      <p>&copy; 2026 Gulalai Ahmadi. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
